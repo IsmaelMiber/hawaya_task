@@ -1,7 +1,6 @@
 import React from "react";
-import { View, Text, TextInput, Alert, ActivityIndicator } from "react-native";
+import { View, Text, TextInput, Alert, ActivityIndicator, KeyboardAvoidingView, TouchableOpacity } from "react-native";
 import styles from "./styles";
-import { BaseButton } from "react-native-gesture-handler";
 import verifyNumber from "../../API/numVerify";
 import { connect } from "react-redux";
 import * as onboardingActions from "../../redux/actions/onboarding";
@@ -14,6 +13,7 @@ class OnBoardingScreen extends React.Component {
     super(props);
     this.state = {
       countryCode: "EG",
+      callingCode: "+20",
       phoneNumber: "",
       error: "",
       verificationCode: "****",
@@ -137,29 +137,43 @@ class OnBoardingScreen extends React.Component {
   };
 
   renderVerificationCodeSection = () => {
-    var { loaderIndicator } = this.state;
+    var { loaderIndicator, phoneNumber, callingCode } = this.state;
     var inputs = [];
     for (let i = 0; i < this.inputsLength; ++i) {
       inputs.push(
         <TextInput
           key={i}
           ref={(ref) => (this[`ref_${i}`] = ref)}
-          onSubmitEditing={() => this.handleFocusOnNextInput(i + 1)}
-          style={{ borderBottomWidth: 2 }}
-          onChangeText={(val) => this.handleVerificationNumberChange(val, i)}
+          // onSubmitEditing={() => this.handleFocusOnNextInput(i + 1)}
+          onChangeText={(val) => {
+            this.handleVerificationNumberChange(val, i);
+            if(val.length > 0) {
+              this.handleFocusOnNextInput(i + 1);
+            }
+          }}
           value={this.getValueOfInput(i)}
           autoCompleteType="tel"
           keyboardType="number-pad"
+          style={styles.vericiationCodeInput}
         />
       );
     }
     return (
-      <View>
+      <View style={styles.container}>
         {/* Start 0f VerificationCode Dialog in case of error */}
         {this.renderVerificationCodeDialog()}
         {/* End 0f VerificationCode Dialog in case of error */}
-
-        {loaderIndicator ? <ActivityIndicator /> : inputs}
+        <Text style={styles.title}>
+        What’s the verification code
+        </Text>
+        <Text style={styles.subTitle}>
+          {`Code sent to ${callingCode + " " + phoneNumber}`}
+        </Text>
+        <View style={styles.vericiationCodeContainer}>
+        {loaderIndicator ? <View style={styles.loaderIndicator}>
+          <ActivityIndicator />
+        </View> : inputs}
+        </View>
       </View>
     );
   };
@@ -168,8 +182,8 @@ class OnBoardingScreen extends React.Component {
     this.setState({ phoneNumber });
   };
 
-  handleSelectOfCountryCode = ({ cca2: countryCode }) => {
-    this.setState({ countryCode });
+  handleSelectOfCountryCode = ({ cca2: countryCode, callingCode }) => {
+    this.setState({ countryCode, callingCode: "+" + callingCode });
   };
 
   onVerifyBtnPress = async () => {
@@ -190,12 +204,13 @@ class OnBoardingScreen extends React.Component {
       return this.renderVerificationCodeSection();
     }
     return (
-      <View style={styles.container}>
+      <KeyboardAvoidingView style={styles.container} behavior="padding" keyboardVerticalOffset={70}>
         {/* Start 0f PhoneNumber Dialog in case of error */}
         {this.renderPhoneNumberDialog()}
         {/* End 0f PhoneNumber Dialog in case of error */}
-        <Text style={styles.title}>{`What's your phone\nnumber?`}</Text>
         <View style={styles.phoneNumberContainer}>
+          <Text style={styles.title}>{`What's your phone\nnumber?`}</Text>
+          <View style={styles.numberVerificationContainer}>
           {/* Start 0f PhoneNumber Text Input */}
           <TextInput
             value={phoneNumber}
@@ -222,16 +237,19 @@ class OnBoardingScreen extends React.Component {
             />
           </View>
           {/* End 0f Country PhoneNumber Code Picker */}
+          </View>
         </View>
 
         {/* Start Button To Validate PhoneNumber */}
-        <BaseButton onPress={this.onVerifyBtnPress}>
-          <View>
-            <Text>Send Code</Text>
-          </View>
-        </BaseButton>
+        <View style={styles.sendBtnContainer}>
+          <TouchableOpacity onPress={this.onVerifyBtnPress} style={[styles.sendCodeBtn, phoneNumber.length > 0 ? styles.sendCodeBtnActive : {}]}>
+            <View>
+              <Text style={[styles.sendCodeText, this.state.phoneNumber.length > 0 ? styles.sendCodeTextActive : {}]}>Send Code</Text>
+            </View>
+          </TouchableOpacity>
+        </View>
         {/* End 0f Button To Validate PhoneNumber */}
-      </View>
+      </KeyboardAvoidingView>
     );
   }
 }
