@@ -1,14 +1,14 @@
-/**
- * @format
- */
+import numVerify from 'numVerify';
 
-import 'react-native';
-import React from 'react';
-import App from '../App';
+it('phone number is valid', async () => {
+  var valid = await numVerify({phoneNumber: '01151073476', countryCode: 'EG'});
+  expect(valid).toBe('valid');
+});
 
-// Note: test renderer must be required after react-native.
-import renderer from 'react-test-renderer';
-
-it('renders correctly', () => {
-  renderer.create(<App />);
+it('phone number is not valid', async () => {
+  var valid = await numVerify({
+    phoneNumber: '011510734761',
+    countryCode: 'EG',
+  });
+  expect(valid).toBe('not_valid');
 });
