@@ -7,6 +7,7 @@ import {
   ActivityIndicator,
   KeyboardAvoidingView,
   TouchableOpacity,
+  Platform,
 } from 'react-native';
 import styles from './styles';
 import verifyNumber from '../../API/numVerify';
@@ -226,7 +227,7 @@ class OnBoardingScreen extends React.Component {
       <KeyboardAvoidingView
         style={styles.container}
         behavior="padding"
-        >
+        keyboardVerticalOffset={Platform.OS == 'ios' ? 40 : 0}>
         {/* Start 0f ProgressBar */}
         <View style={styles.progressBar}>
           <View style={[styles.progressBarActive, {width: `${progress}%`}]} />
