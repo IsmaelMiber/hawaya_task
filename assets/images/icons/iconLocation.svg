@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Primitives/Icons/iconLocation</title>
+    <g id="Primitives/Icons/iconLocation" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M17.6568542,5.30508653 C20.6813275,8.28043387 20.7778656,13.0454182 17.9464686,16.1350123 L17.9545834,16.1421356 L12,22 L6.04541658,16.1421356 L6.05296906,16.1343987 C3.22214721,13.0447873 3.31887277,8.28023688 6.34314575,5.30508653 C9.46734008,2.23163782 14.5326599,2.23163782 17.6568542,5.30508653 Z M12,8 C10.3431458,8 9,9.34314575 9,11 C9,12.6568542 10.3431458,14 12,14 C13.6568542,14 15,12.6568542 15,11 C15,9.34314575 13.6568542,8 12,8 Z" id="Shape" fill="#262626"></path>
+    </g>
+</svg>

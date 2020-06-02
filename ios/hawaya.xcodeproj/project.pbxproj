@@ -17,12 +17,12 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* hawayaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* hawayaTests.m */; };
-		B41C03C8AD89F7CC4EBAB49A /* libPods-hawaya-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6D94D657C12140B04F20A3A /* libPods-hawaya-tvOS.a */; };
-		BD71D17DF61214BE6200D72E /* libPods-hawaya.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC36DFC328D28BF5BAA2B218 /* libPods-hawaya.a */; };
-		F2BE5F23C096343D651B4594 /* libPods-hawaya-hawayaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BFD66A275E7F1CC39F83A81 /* libPods-hawaya-hawayaTests.a */; };
-		C907391FBF6746AFBC522BA8 /* SkolarSansBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF9149BCCCBC44BBAC55F516 /* SkolarSansBold.otf */; };
 		37AA19B8D88E4E67B2AC4062 /* SkolarSansExtrabold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 46EF4207168A480E986EB162 /* SkolarSansExtrabold.otf */; };
 		A3A6E5F517CA4A578D334AC5 /* SkolarSansRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2572B644BB9A44529E78D336 /* SkolarSansRegular.otf */; };
+		B41C03C8AD89F7CC4EBAB49A /* libPods-hawaya-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6D94D657C12140B04F20A3A /* libPods-hawaya-tvOS.a */; };
+		BD71D17DF61214BE6200D72E /* libPods-hawaya.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC36DFC328D28BF5BAA2B218 /* libPods-hawaya.a */; };
+		C907391FBF6746AFBC522BA8 /* SkolarSansBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF9149BCCCBC44BBAC55F516 /* SkolarSansBold.otf */; };
+		F2BE5F23C096343D651B4594 /* libPods-hawaya-hawayaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BFD66A275E7F1CC39F83A81 /* libPods-hawaya-hawayaTests.a */; };
 		F7D3D375B59A46CFBDA37272 /* SkolarSansSemibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9C466B5231114AA7895E2E71 /* SkolarSansSemibold.otf */; };
 /* End PBXBuildFile section */
 
@@ -56,12 +56,15 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = hawaya/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = hawaya/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = hawaya/main.m; sourceTree = "<group>"; };
+		2572B644BB9A44529E78D336 /* SkolarSansRegular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SkolarSansRegular.otf; path = ../assets/fonts/SkolarSansRegular.otf; sourceTree = "<group>"; };
 		2BFD66A275E7F1CC39F83A81 /* libPods-hawaya-hawayaTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-hawaya-hawayaTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E47B1E0B4A5D006451C7 /* hawaya-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hawaya-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* hawaya-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "hawaya-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37BB773277375C491F20B928 /* Pods-hawaya.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hawaya.release.xcconfig"; path = "Target Support Files/Pods-hawaya/Pods-hawaya.release.xcconfig"; sourceTree = "<group>"; };
+		46EF4207168A480E986EB162 /* SkolarSansExtrabold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SkolarSansExtrabold.otf; path = ../assets/fonts/SkolarSansExtrabold.otf; sourceTree = "<group>"; };
 		722AB9233D5A74ED768843D7 /* Pods-hawaya-hawayaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hawaya-hawayaTests.debug.xcconfig"; path = "Target Support Files/Pods-hawaya-hawayaTests/Pods-hawaya-hawayaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7A70A0597F29EDD042717D8B /* Pods-hawaya-hawayaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hawaya-hawayaTests.release.xcconfig"; path = "Target Support Files/Pods-hawaya-hawayaTests/Pods-hawaya-hawayaTests.release.xcconfig"; sourceTree = "<group>"; };
+		9C466B5231114AA7895E2E71 /* SkolarSansSemibold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SkolarSansSemibold.otf; path = ../assets/fonts/SkolarSansSemibold.otf; sourceTree = "<group>"; };
 		B0DE9B3A95B3FFBDBE2E483F /* Pods-hawaya-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hawaya-tvOS.release.xcconfig"; path = "Target Support Files/Pods-hawaya-tvOS/Pods-hawaya-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		B990DD4700951B788FEBEC15 /* Pods-hawaya-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hawaya-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-hawaya-tvOSTests/Pods-hawaya-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DA793055FA493E18C1AEC3E7 /* Pods-hawaya-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hawaya-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-hawaya-tvOS/Pods-hawaya-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -71,10 +74,7 @@
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F0A8D7EFBB575DB84DB03804 /* Pods-hawaya.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hawaya.debug.xcconfig"; path = "Target Support Files/Pods-hawaya/Pods-hawaya.debug.xcconfig"; sourceTree = "<group>"; };
 		FC36DFC328D28BF5BAA2B218 /* libPods-hawaya.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-hawaya.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF9149BCCCBC44BBAC55F516 /* SkolarSansBold.otf */ = {isa = PBXFileReference; name = "SkolarSansBold.otf"; path = "../assets/fonts/SkolarSansBold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		46EF4207168A480E986EB162 /* SkolarSansExtrabold.otf */ = {isa = PBXFileReference; name = "SkolarSansExtrabold.otf"; path = "../assets/fonts/SkolarSansExtrabold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		2572B644BB9A44529E78D336 /* SkolarSansRegular.otf */ = {isa = PBXFileReference; name = "SkolarSansRegular.otf"; path = "../assets/fonts/SkolarSansRegular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		9C466B5231114AA7895E2E71 /* SkolarSansSemibold.otf */ = {isa = PBXFileReference; name = "SkolarSansSemibold.otf"; path = "../assets/fonts/SkolarSansSemibold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FF9149BCCCBC44BBAC55F516 /* SkolarSansBold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SkolarSansBold.otf; path = ../assets/fonts/SkolarSansBold.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,7 +207,7 @@
 			sourceTree = "<group>";
 		};
 		DC065C0EE6C84E63B89DF167 /* Resources */ = {
-			isa = "PBXGroup";
+			isa = PBXGroup;
 			children = (
 				FF9149BCCCBC44BBAC55F516 /* SkolarSansBold.otf */,
 				46EF4207168A480E986EB162 /* SkolarSansExtrabold.otf */,
@@ -216,7 +216,6 @@
 			);
 			name = Resources;
 			sourceTree = "<group>";
-			path = "";
 		};
 /* End PBXGroup section */
 
@@ -670,6 +669,7 @@
 				PRODUCT_NAME = hawaya;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -691,6 +691,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = hawaya;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -862,6 +863,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -914,6 +916,7 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

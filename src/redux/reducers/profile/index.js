@@ -1,14 +1,9 @@
 function profileReducer(state = {}, action) {
   switch (action.type) {
-    case "SAVE_LIKE":
-      var profileLikes = [];
-      if (state.profileLikes) {
-        profileLikes.push(...state.profileLikes);
-      }
-      profileLikes.push(action.profileLike);
+    case 'SAVE_LIKE':
       return {
         ...state,
-        profileLikes,
+        profileLikes: action.profileLikes,
       };
     default:
       return state;

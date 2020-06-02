@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Primitives/Icons/iconHometown</title>
+    <g id="Primitives/Icons/iconHometown" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M9,14 L9,21 C9,21.5522847 8.55228475,22 8,22 L5,22 C3.34314575,22 2,20.6568542 2,19 L2,10 C2,9.69140957 2.14247284,9.40010398 2.38605939,9.21064778 L11.3860594,2.21064778 C11.7471699,1.92978407 12.2528301,1.92978407 12.6139406,2.21064778 L21.6139406,9.21064778 C21.8575272,9.40010398 22,9.69140957 22,10 L22,19 C22,20.6568542 20.6568542,22 19,22 L16,22 C15.4477153,22 15,21.5522847 15,21 L15,14 L9,14 Z" id="Combined-Shape" fill="#262626"></path>
+    </g>
+</svg>

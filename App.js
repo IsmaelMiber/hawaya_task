@@ -6,6 +6,8 @@ import {SafeAreaView} from 'react-native';
 import OnBoardingScreen from './src/Screens/OnBoarding';
 import ProfileScreen from './src/Screens/Profile';
 import SplashScreen from './src/Screens/Splash';
+import SettingScreen from './src/Screens/Setting';
+import MoreScreen from './src/Screens/More';
 
 // Navigator
 import {NavigationContainer} from '@react-navigation/native';
@@ -29,6 +31,8 @@ export default function App() {
             />
             <Stack.Screen name="ProfileScreen" component={ProfileScreen} />
             <Stack.Screen name="SplashScreen" component={SplashScreen} />
+            <Stack.Screen name="SettingScreen" component={SettingScreen} />
+            <Stack.Screen name="MoreScreen" component={MoreScreen} />
           </Stack.Navigator>
         </NavigationContainer>
       </SafeAreaView>

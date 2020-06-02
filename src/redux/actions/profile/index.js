@@ -1,10 +1,10 @@
-function saveProfileLikes(profileLike) {
-  return function (dispatch, getState) {
+function saveProfileLikes(profileLikes) {
+  return function(dispatch, getState) {
     dispatch({
-      type: "SAVE_LIKE",
-      profileLike,
+      type: 'SAVE_LIKE',
+      profileLikes,
     });
   };
 }
 
-export default saveProfileLikes;
+export {saveProfileLikes};
