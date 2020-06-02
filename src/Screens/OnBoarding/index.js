@@ -226,7 +226,7 @@ class OnBoardingScreen extends React.Component {
       <KeyboardAvoidingView
         style={styles.container}
         behavior="padding"
-        keyboardVerticalOffset={70}>
+        >
         {/* Start 0f ProgressBar */}
         <View style={styles.progressBar}>
           <View style={[styles.progressBarActive, {width: `${progress}%`}]} />

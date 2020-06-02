@@ -34,12 +34,13 @@ const styles = StyleSheet.create({
   },
   numberVerificationContainer: {
     flexDirection: 'row-reverse',
-    marginTop: 40,
+    marginTop: Responsive.calcHeight(40),
   },
   sendBtnContainer: {
     flex: 1,
     justifyContent: 'flex-end',
     width: '100%',
+    marginBottom: Responsive.calcHeight(40),
   },
   sendCodeBtn: {
     backgroundColor: '#f3f3f3',
